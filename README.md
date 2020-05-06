@@ -1,6 +1,15 @@
 # Flutter Vision
 
-This is a Flutter app having **text recognition** functionality for detecting *email addresses* from images, built using **Firebase ML Kit**.
+This is a Flutter app having **text recognition** functionality for detecting **email addresses** from images, built using [Firebase ML Kit](https://firebase.google.com/docs/ml-kit).
+
+## Plugins
+
+The plugins used in this project are:
+
+* [camera](https://pub.dev/packages/camera)
+* [firebase_ml_vision](https://pub.dev/packages/firebase_ml_vision)
+* [path_provider](https://pub.dev/packages/path_provider)
+* [intl](https://pub.dev/packages/intl)
 
 ## App Screenshot
 
