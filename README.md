@@ -17,6 +17,44 @@ The plugins used in this project are:
   <img src="https://github.com/sbis04/flutter_vision/raw/master/Screenshots/mlkit.png" alt="Flutter Vision" />
 </p>
 
+## Required configurations
+
+Make sure you complete the following configurations before running the app on your device.
+
+### Android
+
+Go to **project directory** -> **android** -> **app** -> **build.gradle** and set the **minSdkVersion** to **21**:
+
+```gradle
+minSdkVersion 21
+```
+
+### iOS
+
+* Add the following in `ios/Runner/Info.plist`:
+  ```plist
+  <key>NSCameraUsageDescription</key>
+  <string>Can I use the camera please?</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>Can I use the mic please?</string>
+  ```
+
+* Go to `ios/Podfile`.
+  * Uncomment this line:
+    ```Podfile
+    platform :ios, '9.0'
+    ```
+
+  * Add the following at the end:
+    ```Podfile
+    pod 'Firebase/MLVisionBarcodeModel'
+    pod 'Firebase/MLVisionFaceModel'
+    pod 'Firebase/MLVisionLabelModel'
+    pod 'Firebase/MLVisionTextModel'
+    ```
+
+Now, you are ready to run the app on your device.
+
 ## LICENSE
 
 Copyright (c) 2020 Souvik Biswas
