@@ -4,7 +4,9 @@ This is a Flutter app having **text recognition** functionality for detecting *e
 
 ## App Screenshot
 
-
+<p align="center">
+  <img src="https://github.com/sbis04/flutter_vision/raw/master/Screenshots/mlkit.png" alt="Flutter Vision" />
+</p>
 
 ## LICENSE
 
