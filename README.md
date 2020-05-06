@@ -32,7 +32,7 @@ minSdkVersion 21
 ### iOS
 
 * Add the following in `ios/Runner/Info.plist`:
-  ```plist
+  ```
   <key>NSCameraUsageDescription</key>
   <string>Can I use the camera please?</string>
   <key>NSMicrophoneUsageDescription</key>
@@ -41,12 +41,12 @@ minSdkVersion 21
 
 * Go to `ios/Podfile`.
   * Uncomment this line:
-    ```Podfile
+    ```bash
     platform :ios, '9.0'
     ```
 
   * Add the following at the end:
-    ```Podfile
+    ```bash
     pod 'Firebase/MLVisionBarcodeModel'
     pod 'Firebase/MLVisionFaceModel'
     pod 'Firebase/MLVisionLabelModel'
