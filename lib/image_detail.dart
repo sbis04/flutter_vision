@@ -168,7 +168,7 @@ class TextDetectorPainter extends CustomPainter {
     final double scaleX = size.width / absoluteImageSize.width;
     final double scaleY = size.height / absoluteImageSize.height;
 
-    Rect scaleRect(TextContainer container) {
+    Rect scaleRect(TextElement container) {
       return Rect.fromLTRB(
         container.boundingBox.left * scaleX,
         container.boundingBox.top * scaleY,
